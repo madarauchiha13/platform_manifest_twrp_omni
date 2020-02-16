@@ -14,4 +14,13 @@
 <!-- Include TeamWin android_system_update_engine to build a good update_engine_sideload -->
     <project path="system/update_engine" name="android_system_update_engine" remote="TeamWin" revision="android-9.0" />
 </manifest>
-
+<project path="device/xiaomi/beryllium" name=name="mauronofrio/android_device_xiaomi_beryllium" remote="github" revision="android-9.0"name="mauronofrio/android_device_xiaomi_beryllium" remote="github" revision="android-9.0" />
+name="mauronofrio/android_device_xiaomi_beryllium" remote="github" revision="android-9.0" /
+. build/envsetup.sh
+lunch omni_beryllium-eng
+mka adbd recoveryimage ALLOW_MISSING_DEPENDENCIES=true
+name="mauronofrio/android_device_xiaomi_beryllium" remote="github" revision=
+. build/envsetup.sh
+lunch omni_beryllium-eng
+mka adbd recoveryimage ALLOW_MISSING_DEPENDENCIES=true
+fastboot boot out/target/product/beryllium/recovery.img
